@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boka</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img src="img/Hotell.png" alt="Hotell logo" width="60" height="60"></a>
+            <a href="boka.html" class="nav-button">Boka</a>
+            <hr>
+        </header>
+        <main>
+            <h1>Bokningsformulär</h1>
+            <form action="index.html">
+                <label for="namn">För- och efternamn:</label><br>
+                <input type="text" id="namn" name="namn"><br><br>
+                <label for="e-post">E-post:</label><br>
+                <input type="email" id="e-post" name="e-post" required><br><br>
+                <label for="ankomst">Ankomst</label><br>
+                <input type="date"  id="ankomst"><br><br>
+                <label for="dagar">Hur många dagar vill du boka för?</label><br>
+                <input type="number" id="dagar"><br>
+                <p>Villken typ av rum vill du boka?</p>
+                <input type="radio" id="Enkelrum">
+                <label for="rum">Enkelrum</label><br>
+                <input type="radio" id="Dubbelrum">
+                <label for="rum">Dubbelrum</label><br>
+                <input type="radio" id="Svit">
+                <label for="rum">Svit</label><br><br>
+                <label for="rum">Hur många rum vill du boka?</label><br>
+                <input type="number" id="rum"><br><br>
+                <input type="checkbox" id="Villkor" name="Villkor">
+                <label for="Villkor">Jag har läst och godkänner villkoren och integritetspolicyn</label><br><br>
+                <input type="submit" value="Submit">
+            </form>
+            </main>
+    </body>
+</html>
